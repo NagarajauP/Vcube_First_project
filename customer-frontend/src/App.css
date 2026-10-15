@@ -1,0 +1,165 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5f9;
+  color: #202938;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: #174ea6;
+  color: white;
+  text-align: center;
+  padding: 28px 16px;
+}
+
+.header h1 {
+  margin: 0 0 10px;
+}
+
+.header p {
+  margin: 0;
+}
+
+.container {
+  width: min(1100px, 94%);
+  margin: 28px auto;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 22px;
+  box-shadow: 0 3px 14px #0000000d;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 21px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #ccd3df;
+  border-radius: 7px;
+  margin-bottom: 8px;
+}
+
+input:focus {
+  outline: 2px solid #9bbdff;
+  border-color: #174ea6;
+}
+
+button {
+  background: #174ea6;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 11px 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.88;
+}
+
+.secondary {
+  background: #5d6676;
+}
+
+.edit {
+  background: #15803d;
+}
+
+.delete {
+  background: #c62828;
+}
+
+.actions,
+.search-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-row {
+  margin-bottom: 10px;
+}
+
+.search-row input {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.message {
+  background: #e5efff;
+  color: #174ea6;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.table-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.table-heading span {
+  color: #5d6676;
+  font-size: 14px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 14px;
+  text-align: left;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e2e6ed;
+  padding: 13px 10px;
+}
+
+th {
+  background: #edf2fa;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 16px;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+}
